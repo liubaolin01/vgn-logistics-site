@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>联系我们 — 获取美国头程、仓储与派送方案 | VGN GROUP INC</title>
+<meta name="description" content="联系 VGN GROUP INC：告诉我们货量、起运港与目的仓，获取提柜、仓储与派送组合方案与报价。加州团队对接，支持邮件与 API 对接咨询。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="联系 VGN GROUP INC">
+<meta property="og:description" content="提交货量与目的仓信息，获取美国段组合方案与报价。">
+<meta property="og:image" content="assets/img/lastmile.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-title-key="meta.title.contact" data-desc-key="meta.desc.contact">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="VGN GROUP INC">
+      <span class="brand-mark">VGN</span>
+      <span class="brand-text">
+        <span class="brand-name">VGN GROUP</span>
+        <span class="brand-sub">SUPPLY CHAIN · USA</span>
+      </span>
+    </a>
+    <nav class="nav" id="primaryNav">
+      <a href="index.html" data-t="nav.home">首页</a>
+      <a href="services.html" data-t="nav.services">服务能力</a>
+      <a href="technology.html" data-t="nav.tech">系统与 API</a>
+      <a href="about.html" data-t="nav.about">关于我们</a>
+      <a href="contact.html" aria-current="page" data-t="nav.contact">联系我们</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-switch" role="group" aria-label="Language">
+        <button type="button" data-lang="zh" aria-pressed="true">中</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+      <a class="btn btn--primary btn--sm" href="#quoteForm" data-t="nav.cta">获取方案报价</a>
+      <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="primaryNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="page-hero-bg"><img src="assets/img/lastmile.jpg" alt="末端派送交付" width="1536" height="1024"></div>
+    <div class="container">
+      <div class="crumbs"><a href="index.html" data-t="nav.home">首页</a><span data-t="nav.contact">联系我们</span></div>
+      <h1 class="h1" data-t="cp.title">先说清楚货，再谈价格</h1>
+      <p class="lead" data-t="cp.lead">把货量、起运港、目的仓和时效要求告诉我们，我们会给出提柜、仓储与派送的组合方案——不打包票，但把每一段算清楚。</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container form-wrap">
+      <div class="form-card" data-reveal>
+        <h2 class="h3" data-t="cf.title">提交需求</h2>
+        <p class="form-note" style="margin-top:8px;margin-bottom:24px" data-t="cf.sub">带 * 为必填。提交后将调起你的邮件客户端，内容会自动填好。</p>
+        <form id="quoteForm" data-mailto="service@vgn-group.com" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-company" data-t="cf.company">公司名称</label>
+              <input id="f-company" name="company" type="text" autocomplete="organization" data-tp="cf.company" placeholder="公司名称">
+            </div>
+            <div class="field">
+              <label for="f-name" data-t="cf.name">联系人 *</label>
+              <input id="f-name" name="name" type="text" required autocomplete="name" data-tp="cf.name" placeholder="联系人">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-email" data-t="cf.email">邮箱 *</label>
+              <input id="f-email" name="email" type="email" required autocomplete="email" data-tp="cf.email" placeholder="name@company.com">
+            </div>
+            <div class="field">
+              <label for="f-phone" data-t="cf.phone">电话 / 微信</label>
+              <input id="f-phone" name="phone" type="text" data-tp="cf.phone" placeholder="电话或微信号">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-freight" data-t="cf.freight">运输方式</label>
+              <select id="f-freight" name="freight">
+                <option value="海运整柜" data-t="cf.o1">海运整柜</option>
+                <option value="海运拼箱" data-t="cf.o2">海运拼箱</option>
+                <option value="空运" data-t="cf.o3">空运</option>
+                <option value="快递" data-t="cf.o4">快递</option>
+                <option value="仓储履约 / 一件代发" data-t="cf.o5">仓储履约 / 一件代发</option>
+                <option value="退件换标" data-t="cf.o6">退件换标</option>
+                <option value="其他" data-t="cf.o7">其他</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-volume" data-t="cf.volume">月货量</label>
+              <input id="f-volume" name="volume" type="text" data-tp="cf.volume" placeholder="如 20 条 40HQ / 3000 票">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-route" data-t="cf.route">起运港 / 目的仓</label>
+            <input id="f-route" name="route" type="text" data-tp="cf.route" placeholder="如 深圳盐田 → 安大略仓（ONT）">
+          </div>
+          <div class="field">
+            <label for="f-msg" data-t="cf.msg">需求说明</label>
+            <textarea id="f-msg" name="message" data-tp="cf.msg" placeholder="货物类型、时效要求、是否需要 API 对接、是否需要退件换标等"></textarea>
+          </div>
+          <button class="btn btn--primary btn--block" type="submit" data-t="cf.submit">生成邮件并发送</button>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+          <textarea id="formOutput" hidden readonly aria-label="邮件内容" style="margin-top:14px;font-family:inherit;font-size:13px;color:var(--text-soft);border:1px solid var(--line);padding:12px;min-height:150px;background:#FFFDF8"></textarea>
+          <button class="btn btn--outline btn--sm" type="button" id="copyFormBtn" hidden style="margin-top:10px" data-t="cf.copy">复制内容</button>
+          <p class="form-note" data-t="cf.note">我们只在处理你的询价时使用这些信息，不会用于其他用途。</p>
+        </form>
+      </div>
+
+      <aside id="reach" data-reveal="120">
+        <h2 class="h3" data-t="reach.title">直接联系</h2>
+        <div class="contact-list" style="margin-top:18px">
+          <div class="contact-item">
+            <span class="c-k" data-t="reach.email">业务邮箱</span>
+            <span class="c-v"><a data-cfg="email" href="mailto:service@vgn-group.com">service@vgn-group.com</a></span>
+            <span class="c-d" data-t="reach.emaild">询价、对接与售后均可发信，建议注明起运港与目的仓。</span>
+            <button class="copy-btn" type="button" data-copy="service@vgn-group.com" data-t="reach.copy">复制邮箱</button>
+          </div>
+          <div class="contact-item" data-cfg-block="phone" hidden>
+            <span class="c-k" data-t="reach.phone">电话</span>
+            <span class="c-v"><a data-cfg="phone" href="tel:+8615258788778">152 5878 8778</a></span>
+            <span class="c-d" data-t="reach.phoned">工作日可直接致电；提柜、派送等有时效要求的需求，电话比邮件更快。</span>
+            <button class="copy-btn" type="button" data-copy="152 5878 8778" data-t="reach.copyp">复制电话</button>
+          </div>
+          <div class="contact-item">
+            <span class="c-k" data-t="reach.addr">所在地</span>
+            <span class="c-v" data-cfg="address">California, United States</span>
+            <span class="c-d" data-t="reach.addrd">美国加利福尼亚州；仓库与办公地址可按需提供。</span>
+          </div>
+          <div class="contact-item">
+            <span class="c-k" data-t="reach.hours">服务时间</span>
+            <span class="c-v" data-t="reach.hoursv">周一至周五 · 美国西部时间</span>
+            <span class="c-d" data-t="reach.hoursd">紧急提柜需求请在邮件标题标注 URGENT，我们会优先处理。</span>
+          </div>
+        </div>
+
+        <div class="split-note" style="margin-top:26px" data-t="reach.note">
+          不想走邮件？也可以直接预约一次 20 分钟通话，把货量、目的仓与时效要求过一遍，我们给出书面方案。
+        </div>
+
+        <h2 class="h3" style="margin-top:40px" data-t="steps.title">接下来会发生什么</h2>
+        <div class="metric-row" style="margin-top:18px">
+          <div class="metric"><b>01</b><span data-t="steps.1">确认货量与目的仓</span></div>
+          <div class="metric"><b>02</b><span data-t="steps.2">给出组合方案与报价</span></div>
+          <div class="metric"><b>03</b><span data-t="steps.3">试单或直接入仓</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section section--paper2 section--tight">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="card" data-reveal="0">
+          <h3 data-t="cq.1.t">只在找仓库？</h3>
+          <p data-t="cq.1.d">提供货物规格、预计入仓时间与月订单量，我们评估仓位与履约成本。</p>
+          <a class="card-link" href="services.html#fulfillment"><span data-t="cq.1.l">仓储与一件代发</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="card" data-reveal="80">
+          <h3 data-t="cq.2.t">只在找提柜？</h3>
+          <p data-t="cq.2.d">提供柜号、码头与预约窗口，我们按 2 小时响应标准安排提柜与拆柜。</p>
+          <a class="card-link" href="services.html#first-mile"><span data-t="cq.2.l">头程与拆柜分拨</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="card" data-reveal="160">
+          <h3 data-t="cq.3.t">需要系统对接？</h3>
+          <p data-t="cq.3.d">说明你的系统类型与要同步的数据，我们安排技术对接与联调计划。</p>
+          <a class="card-link" href="technology.html"><span data-t="cq.3.l">系统与 API</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">VGN</span>
+          <span class="brand-text">
+            <span class="brand-name">VGN GROUP</span>
+            <span class="brand-sub">SUPPLY CHAIN · USA</span>
+          </span>
+        </a>
+        <p data-t="ft.about">VGN GROUP INC 坐落于美国加利福尼亚州，为跨境电商与传统贸易商提供一站式、可视化的美国供应链解决方案。</p>
+      </div>
+      <div class="footer-col">
+        <h5 data-t="ft.services">服务</h5>
+        <a href="services.html#first-mile" data-t="ft.s1">头程与拆柜分拨</a>
+        <a href="services.html#fulfillment" data-t="ft.s2">仓储与一件代发</a>
+        <a href="services.html#delivery" data-t="ft.s3">全美派送</a>
+        <a href="services.html#after-sales" data-t="ft.s4">售后与增值</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-t="ft.company">公司</h5>
+        <a href="about.html" data-t="nav.about">关于我们</a>
+        <a href="technology.html" data-t="nav.tech">系统与 API</a>
+        <a href="contact.html" data-t="nav.contact">联系我们</a>
+      </div>
+      <div class="footer-col">
+        <h5 data-t="ft.contact">联系</h5>
+        <li><a data-cfg="email" href="mailto:service@vgn-group.com">service@vgn-group.com</a></li>
+        <li data-cfg-block="phone" hidden><a data-cfg="phone" href="tel:+8615258788778">152 5878 8778</a></li>
+        <li><span data-cfg="address">California, United States</span></li>
+        <li><span data-t="ft.hours">服务时间：周一至周五（美国西部时间）</span></li>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span class="yr">2026</span> VGN GROUP INC. <span data-t="ft.rights">保留所有权利</span></span>
+      <span data-t="ft.addr">California, United States</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script src="assets/js/config.js"></script>
+<script src="assets/js/i18n.en.js"></script>
+<script src="assets/js/main.js"></script>
+<script>document.querySelectorAll('.yr').forEach(function(e){e.textContent=new Date().getFullYear();});</script>
+</body>
+</html>
